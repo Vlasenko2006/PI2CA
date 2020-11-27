@@ -1,0 +1,54 @@
+<head>
+  <!-- Plotly.js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+<p id="demo"></p>
+  
+  <div id="graph"></div>
+  
+<button>Send an HTTP GET request to a page and get the result back</button>  
+  
+  <script>
+    <!-- JAVASCRIPT CODE GOES HERE -->
+    
+
+    
+var text ='Hallo'
+var target = "https://api.github.com/Vlasenko2006/PI2CA/blob/main/test.txt"
+var data 
+var responce
+
+/*
+fetch(target)
+.then(response => response.json())
+.then(data => {
+  console.log(data) // Prints result from `response.json()` in getRequest
+})
+.catch(error => console.error(error))
+*/
+
+const invocation = new XMLHttpRequest();
+const url = 'https://github.com/Vlasenko2006/PI2CA/blob/main/test.txt';
+// 'http://bar.other/resources/credentialed-content/';
+    
+function callOtherDomain() {
+  if (invocation) {
+    invocation.open('GET', url, true);
+    invocation.withCredentials = true;
+    invocation.onreadystatechange = handler;
+    invocation.send(); 
+  }
+}
+
+
+
+document.getElementById("demo").innerHTML = text ;
+
+
+    
+    
+  </script>
+</body>
