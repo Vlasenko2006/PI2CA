@@ -303,15 +303,14 @@ var layout = {height:height*.6,
 
  xaxis: {
     showgrid: false,
-    title: 'AXIS TITLE',
+    title: 'Longitude',
     titlefont: {
       family: 'Arial, sans-serif',
       size: 18,
       color: 'lightgrey'
-//      tickvals = [0, 50],
-//      ticktext = ['-1','15E'],
-
     },
+    ticktext: ['4W','6E','15E'],
+    tickvals: [0, 25, 49],
     showticklabels: true,
     tickangle: 'auto',
     tickfont: {
@@ -324,7 +323,28 @@ var layout = {height:height*.6,
   },
   
    yaxis: {
-    showgrid: false}
+    showgrid: false,
+        title: 'Latitude',
+    titlefont: {
+      family: 'Arial, sans-serif',
+      size: 18,
+      color: 'lightgrey'
+    },
+    ticktext: ['33N','48N','65N'],
+    tickvals: [0, 25, 49],
+    showticklabels: true,
+    tickangle: 'auto',
+    tickfont: {
+      family: 'Old Standard TT, serif',
+      size: 14,
+      color: 'black'
+    },
+    exponentformat: 'e',
+    showexponent: 'all'
+    
+    
+    
+    }
     
   
     
