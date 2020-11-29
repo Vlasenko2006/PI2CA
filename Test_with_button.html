@@ -223,20 +223,14 @@ function display(m) {
 
 <button id="demo"class="button button1">GO!</button>
 
-<!-- <p id="demo"></p> -->
-
-
-
-
-
-
-  <div id="graph" >
-  </div>
-  <script>
+<div id="graph" > </div>
+  
+<script>
   
       
 <!-- JAVASCRIPT CODE GOES HERE -->
     
+
 
 
 
@@ -255,8 +249,12 @@ function PI2CA(){
 
 var url = 'https://raw.githack.com/Vlasenko2006/PI2CA/main/empty.jpg'
 
-var too1 = multiply_scalar(M0_NO2,Math.tanh(1));
-var too2 = multiply_scalar(M1_NO2,0);
+
+
+var date = prompt("Please enter desirable date:", 1);
+
+var too1 = multiply_scalar(M0_NO2,Math.tanh(date));
+var too2 = multiply_scalar(M1_NO2,Math.tanh(date));
 var too = sum_ab(too2,too1);
 
 too[0][0] = 0
@@ -298,6 +296,10 @@ var data = [orgTrace, selectedTrace];
 // (may want to define margins too for better consistency)
 var height = 1000;
 var layout = {height:height*.6,
+
+  autosize: false,
+  width: 500,
+  height: 500,
 
  xaxis: {
     showgrid: false,
