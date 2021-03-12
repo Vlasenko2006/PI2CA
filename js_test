@@ -1,1 +1,1 @@
-var cars = ["Saab", "Volvo", "BMW"];
+["Saab", "Volvo", "BMW"];
